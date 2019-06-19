@@ -17,8 +17,6 @@ const createWindow = () => {
 
   mainWindow.loadURL(`file://${__dirname}/index.html`).catch(console.log);
 
-  mainWindow.webContents.openDevTools();
-
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
